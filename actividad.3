@@ -1,0 +1,26 @@
+class Producto:
+    def __init__(self, nombre, precio, stock):
+        self.nombre = nombre
+        self.precio = precio
+        self.stock = stock
+
+    def obtener_nombre(self):
+        return self.nombre
+
+    def establecer_nombre(self, nombre):
+        self.nombre = nombre
+
+    def obtener_precio(self):
+        return self.precio
+
+    def establecer_precio(self, precio):
+        self.precio = precio
+
+    def obtener_stock(self):
+        return self.stock
+
+    def aumentar_stock(self, cantidad):
+        self.stock += cantidad
+
+    def disminuir_stock(self, cantidad):
+        self.stock -= cantidad

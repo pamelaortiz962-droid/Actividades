@@ -1,0 +1,18 @@
+class Circulo:
+    def __init__(self, radio):
+        self.radio = radio
+
+    def obtener_radio(self):
+        return self.radio
+
+    def establecer_radio(self, radio):
+        self.radio = radio
+
+    def obtener_diametro(self):
+        return self.radio * 2
+
+    def calcular_area(self):
+        return math.pi * (self.radio ** 2)
+
+    def calcular_circunferencia(self):
+        return 2 * math.pi * self.radio

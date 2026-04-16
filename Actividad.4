@@ -1,0 +1,22 @@
+class Rectangulo:
+    def __init__(self, longitud, anchura):
+        self.longitud = longitud
+        self.anchura = anchura
+
+    def obtener_longitud(self):
+        return self.longitud
+
+    def establecer_longitud(self, longitud):
+        self.longitud = longitud
+
+    def obtener_anchura(self):
+        return self.anchura
+
+    def establecer_anchura(self, anchura):
+        self.anchura = anchura
+
+    def calcular_area(self):
+        return self.longitud * self.anchura
+
+    def calcular_perimetro(self):
+        return 2 * (self.longitud + self.anchura)

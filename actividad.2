@@ -1,0 +1,26 @@
+class Coche:
+    def __init__(self, marca, modelo, año_fabricacion):
+        self.marca = marca
+        self.modelo = modelo
+        self.año_fabricacion = año_fabricacion
+
+    def obtener_marca(self):
+        return self.marca
+
+    def establecer_marca(self, marca):
+        self.marca = marca
+
+    def obtener_modelo(self):
+        return self.modelo
+
+    def establecer_modelo(self, modelo):
+        self.modelo = modelo
+
+    def obtener_anio_fabricacion(self):
+        return self.año_fabricacion
+
+    def establecer_anio_fabricacion(self, anio):
+        self.año_fabricacion = año
+
+    def calcular_antiguedad(self):
+        return datetime.now().year - self.anio_fabricacion

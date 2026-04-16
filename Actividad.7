@@ -1,0 +1,22 @@
+class Banco:
+    def __init__(self, nombre, tasa_interes):
+        self.nombre = nombre
+        self.tasa_interes = tasa_interes
+
+    def obtener_nombre(self):
+        return self.nombre
+
+    def establecer_nombre(self, nombre):
+        self.nombre = nombre
+
+    def obtener_tasa_interes(self):
+        return self.tasa_interes
+
+    def establecer_tasa_interes(self, tasa):
+        self.tasa_interes = tasa
+
+    def calcular_interes(self, capital, tiempo):
+        return capital * self.tasa_interes * tiempo
+
+    def calcular_tiempo_duplicar(self, capital):
+        return math.log(2) / math.log(1 + self.tasa_interes)
